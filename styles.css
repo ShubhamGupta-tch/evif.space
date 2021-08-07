@@ -1,0 +1,158 @@
+:root{
+	--white: #ffffff;
+	--black: #262626;
+	color-scheme: dark;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins;
+	color: var(--black);
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.main_name{
+	padding: 4em;
+	font-size: 2.5rem;
+}
+
+.blank_space{
+	width: auto;
+	height: 12vh;
+}
+
+.beyond_text{
+	font-size: 20em;
+	font-weight: 600;
+}
+
+.marquee {
+    width: 100%; /* Width of marquee "window" must match the width of p elements*/
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee > div {
+  display: table-row;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: marquee 13s linear infinite; /* Time must be adjusted based on total width of scrolled elements*/
+}
+
+.marquee > div p {
+  width: auto; /* Width of p elements must match the width of marquee "window"*/
+  padding-left: 100vw;
+  display: table-cell;
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.why_us{
+	background: var(--black);
+	padding: 9em 4em;
+}
+
+.what_we_do{
+	font-size: 2.3em;
+	color: var(--white);
+}
+
+.quest{
+	margin-top: 2em;
+	font-size: 3em;
+	font-weight: 600;
+	color: var(--white);
+}
+
+.answer{
+	font-size: 2.2em;
+	color: var(--white);
+}
+
+.project_text{
+	color: var(--black);
+	font-size: 6em;
+	font-weight: 700;
+	position: relative;
+	top: -65px;
+	text-shadow: -5px -5px var(--white);
+}
+
+.best{
+	position: relative;
+	background: var(--black);
+	height: 15em;
+}
+/*
+.best::before{
+	content: "Our Best Work";
+	font-size: 5em;
+	color: var(--white);
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.1;
+	text-align: center;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}*/
+
+.best_link{
+	font-size: 4em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+	transform: translate(-50%, -50%);
+	opacity: 0.8;
+}
+
+.best_work{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 10em;
+	color: var(--white);
+	margin-left: 50%;
+	transform: translateX(-50%);
+	white-space:nowrap;
+	opacity: 0.05;
+	user-select: none;
+}
+
+.end_title{
+	margin: 2em 0 0 0;
+	font-size: 3em;
+	font-weight: 600;
+}
+
+.end_text{
+	font-size: 2em;
+}
+
+.contact_us{
+	margin: 5em 0;
+}
+
+.contact_text{
+	font-size: 3em;
+	font-weight: 500;
+}
+
+.social{
+	height: 100px;
+	width: 100px;
+	margin: 0 1em;
+}
